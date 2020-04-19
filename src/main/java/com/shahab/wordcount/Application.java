@@ -46,6 +46,7 @@ public class Application {
         job.setJarByClass(Application.class);
         job.setMapperClass(TokenizerMapper.class);
         job.setReducerClass(IntSumReducer.class);
+        job.setCombinerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
